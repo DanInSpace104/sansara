@@ -3,15 +3,27 @@ Baby blockchain implementation for DistributedLabs course
 
 ## Deployment
 1. Create virtual environment: `python3 -m venv env`
-2. Activate environment: `sourch env/bin/activate`
+2. Activate environment:
+    - Linux: `sourch env/bin/activate`
+    - Windows: `env\Scripts\activate`
 3. Install requirements: `python3 -m pip install -r requirements.txt`
+4. Linux only: make main file executable: `chmod +x sansara`
+
 
 ### Testing
 To run tests: `pytest`. To test specific file: `pytest filename.py`
 
 ### Running
-Work in progress...
+- Linux: `./sansara`
+- Windows: `python sansara`
+Run with `--help` to see avaliable options.
 
+#### Commands:
+- `keys`       Manage keys
+    - `generate`  Generate key pair and save it to files
+- `signature`  Sign and verify files
+    - `sign-file`    Sign file with private key file
+    - `verify-file`  Verify file with signature
 
 ## Overview
 Anonymous reputation / karma system similar to that on habr.com. Anonymity of all authors ensure honest voting without influence of author name and personal grudges. It allows open discussion of difficult social topics or non-popuar opinions, which is especially actual with modern cancelling culture. Anonymity benefits its readers in countries where you can be arrested for simple "like" on wrong post in social media. Also the system protects from spamming votes with bot accounts and some other methods of vote cheating.

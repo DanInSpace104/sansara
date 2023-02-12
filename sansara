@@ -1,0 +1,18 @@
+#!env/bin/python
+
+import click
+
+from keys import keys
+from signature import signature
+
+
+@click.group
+def cli():
+    pass
+
+
+cli.add_command(keys)
+cli.add_command(signature)
+
+if __name__=='__main__':
+    cli()
