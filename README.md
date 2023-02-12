@@ -14,9 +14,9 @@ Baby blockchain implementation for DistributedLabs course
 To run tests: `pytest`. To test specific file: `pytest filename.py`
 
 ### Running
+Run with `--help` to see avaliable options.
 - Linux: `./sansara`
 - Windows: `python sansara`
-Run with `--help` to see avaliable options.
 
 #### Commands:
 - `keys`       Manage keys
