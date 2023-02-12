@@ -1,0 +1,6 @@
+[tool.pyright]
+enableTypeIgnoreComments = true
+typeCheckingMode = "strict"
+
+[tool.pytest.ini_options]
+python_files = "*.py"
