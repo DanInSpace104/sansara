@@ -32,7 +32,7 @@ If articles itself stored in blockchain (optional), the system prevents its cont
 ## Rules of how it works
 *Note: All numbers intended to be an example and should be balanced on integration process.*
 
-- Each article is account in similar way as UTXO in Bitcoin. Article receive positive and negative amount of karma from votes of readers.
+- Each article is unique account (so you can not detect several articles from same author by address to which you send votes). Article receive positive and negative amount of karma from votes of readers.
 - If amount of karma is positive, author of the article can vote for other articles that he likes or dislikes. Amount of available vote is calculated as articleKarma/10. It can not be stored/saved for later and it resets every day.
 - Karma received today will be taken into account of vote amount only on the next day.
 - Karma slowly decomposes at the rate of 0.1 point per day. It ensures that active authors have more influence than lucky ones from past.
